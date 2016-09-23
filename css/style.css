@@ -395,9 +395,9 @@ nav .icon {
 
 .header-special {
   font-family: "Fira Mono", monospace;
-  font-size: 2rem;
-  margin-bottom: -5%;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: -2.5% auto;
 }
 
 .header-text {
