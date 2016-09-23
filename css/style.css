@@ -427,6 +427,7 @@ nav .icon {
 }
 
 .header-text p {
+  padding: 0 60px;
   margin-top: 5%;
   line-height: 2.5rem;
 }
