@@ -6,12 +6,13 @@ $(document).ready(function(){
 	$("#header-3").css("display","none");
 	$("#profile").css("display","none");
 	$("#nav").css("display","none");
-	$(".project-info").css("opacity", 0.35);
+	$(".project-info").css("opacity", 0.25);
 	$(".project-info").css("transform", "scale(0.75)");
 	//fade in image and nav
 	$("#profile").fadeIn("slow");
 	$("#nav").slideDown("slow");
 	//type thing
+    $(function(){
     $('#header-1').typewrite({
     'callback': function(){
 		$("#header-3").fadeIn(750);
@@ -21,13 +22,13 @@ $(document).ready(function(){
 	$("#header-2").typewrite({
     'callback': function(){
 	    },
-	    'extra_char': '.',
 	    'delay': 250
 	});
+});
 	//scroll stuff
 	$(window).scroll(function(){
 		$('.project-info').each( function(i){		    
-		    var bottom_of_object = $(this).position().top + $(this).outerHeight(); 
+		    var bottom_of_object = $(this).offset().top + $(this).outerHeight(); 
 		    var bottom_of_window = $(window).scrollTop() + $(window).height();
 			    if( bottom_of_window > bottom_of_object ){			    	
 			        $(this).animate({'opacity':'1'});
@@ -35,10 +36,6 @@ $(document).ready(function(){
                 }
             });
 	});
-
-
-
-
 	//smoothscroll
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {

@@ -226,36 +226,6 @@ p {
   text-transform: uppercase;
 }
 
-nav {
-  background: white;
-}
-
-nav ul {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-}
-
-nav li {
-  list-style: none;
-}
-
-nav a {
-  padding: 10px 25px;
-  font-size: 1.2rem;
-  color: black;
-  font-family: "Bungee", sans-serif;
-  width: 100%;
-  transition: 0.3s;
-  position: relative;
-}
-
-nav a:hover {
-  color: white;
-  background: black;
-}
-
 @-webkit-keyframes bouncing {
   0% {
     top: 0;
@@ -329,6 +299,59 @@ nav a:hover {
   color: white;
 }
 
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinking {
+  -webkit-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+nav {
+  background: white;
+}
+
+nav ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  color: black;
+  font-family: "Bungee", sans-serif;
+  width: 100%;
+  transition: 0.3s;
+  position: relative;
+}
+
+nav a:hover {
+  color: white;
+  background: black;
+}
+
 .btn-1 {
   width: 100px;
   font-size: 1.4rem;
@@ -365,8 +388,11 @@ nav a:hover {
   max-width: 100%;
 }
 
-.header-text-2 {
-  text-align: left;
+.header-special {
+  font-family: "Fira Mono", monospace;
+  font-size: 2rem;
+  margin-bottom: -5%;
+  font-weight: 600;
 }
 
 .header-text {
@@ -374,10 +400,10 @@ nav a:hover {
   -webkit-flex: 1 1 60%;
       -ms-flex: 1 1 60%;
           flex: 1 1 60%;
+  text-align: left;
 }
 
 .header-text h1, .header-text h2 {
-  font-family: "Bungee", sans-serif;
   margin-bottom: 0;
 }
 
@@ -389,13 +415,7 @@ nav a:hover {
   margin-top: 0;
   margin: 0;
   padding: 1% 0;
-}
-
-.header-text h2 {
-  font-family: "Fira Mono", monospace;
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin-bottom: -2%;
+  font-family: "Bungee", sans-serif;
 }
 
 .header-text p {
