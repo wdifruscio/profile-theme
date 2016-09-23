@@ -63,6 +63,9 @@
 			color:white;
 		}
 	}
+	.flex-wrapper{
+		align-items: center;
+	}
 }
 .half-container{
 	color:white;
@@ -73,16 +76,16 @@
 		font-family: $titlefont;
 	}
 	img{
-		max-width:100%;
+		width:100%;
 	}
 	
 }
 .project-1{
-	background: url(../assets/project-1.jpeg) no-repeat center;
+	/* background: url(../assets/project-1.jpeg) no-repeat center; */
 	background-size:cover;
 }
 .project-2{
-	background: url(../assets/project-2.jpg) no-repeat center;
+/* 	background: url(../assets/project-2.jpg) no-repeat center; */
 	background-size:cover;
 }
 .project-info{
@@ -261,3 +264,5 @@ footer{
 :-ms-input-placeholder {  
    color: white;  
 }
+
+@import 'partials/queries';

@@ -360,6 +360,12 @@ nav a:hover {
   padding: 5px 10px;
   color: white;
   font-family: "Fira Mono", monospace;
+  transition: 0.3s;
+}
+
+.project-info .btn-1:hover {
+  color: #43cb83;
+  border: 2px solid #43cb83;
 }
 
 .about {
@@ -431,6 +437,12 @@ nav a:hover {
   color: white;
 }
 
+.work .flex-wrapper {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .half-container {
   color: white;
   -webkit-flex: 1 1 50%;
@@ -445,16 +457,16 @@ nav a:hover {
 }
 
 .half-container img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .project-1 {
-  background: url(../assets/project-1.jpeg) no-repeat center;
+  /* background: url(../assets/project-1.jpeg) no-repeat center; */
   background-size: cover;
 }
 
 .project-2 {
-  background: url(../assets/project-2.jpg) no-repeat center;
+  /* 	background: url(../assets/project-2.jpg) no-repeat center; */
   background-size: cover;
 }
 
@@ -678,4 +690,41 @@ footer {
 
 :-ms-input-placeholder {
   color: white;
+}
+
+@media all and (max-width: 1174px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .wrapper {
+    width: 98%;
+    margin: 1% auto;
+  }
+  .profile-image {
+    -webkit-flex: 1 1 80%;
+        -ms-flex: 1 1 80%;
+            flex: 1 1 80%;
+    margin-right: 5%;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .profile-image img {
+    max-width: 30%;
+  }
+  .header-text {
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 767px) {
+  nav {
+    color: yellow;
+  }
 }

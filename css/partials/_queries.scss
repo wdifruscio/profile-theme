@@ -1,0 +1,40 @@
+$smartphone: 480px;
+$tabletPortrait: 767px;
+$tabletLandscape: 1024px;
+$desktop: 1174px;
+$largeScreen: 1400px;
+
+@media all and (max-width:$desktop){
+  .wrapper{
+    width:90%;
+  }
+}
+
+@media all and (max-width:$tabletLandscape){
+  .wrapper{
+    width:98%;
+    margin:1% auto;
+  }
+  .profile-image{
+    flex:1 1 80%;
+    margin-right:5%;
+    order:2;
+    img{
+      max-width:30%;
+    }
+  }
+  .header-text{
+    order:1;
+    text-align:center;
+  }
+}
+@media all and (max-width:$tabletPortrait){
+
+  nav{
+    color:yellow;    
+  }
+
+  }
+@media all and (max-width:$smartphone){	
+
+  }
