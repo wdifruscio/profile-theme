@@ -1,0 +1,26 @@
+nav{
+	background: white;
+	// position:fixed;
+	// z-index:100;
+	ul{
+		display:flex;
+		margin:auto;
+	}
+	li{
+		list-style:none;
+	}
+	a{
+		padding:10px 25px;
+		font-size:1.2rem;
+		color:black;
+		font-family:$titlefont;
+		width:100%;
+		transition:0.3s;
+		position:relative;
+		&:hover{
+			color:white;
+			background:black;
+		}
+	}
+}
+

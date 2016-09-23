@@ -1,0 +1,30 @@
+@keyframes bouncing{
+0%{top:0}
+25%{top:3px}
+40%{top:4px}
+50%{top:5px}
+60%{top:4px}
+75%{top:3px}
+100%{top:0}
+
+}
+
+.chevron-down{
+	position:relative;
+	margin:-1% auto;
+	width:50px;
+	transition:0.3s all ease;
+	cursor:pointer;
+	animation:bouncing 2s infinite;	
+	color:white;
+
+	.fa{
+		font-size:4rem;
+	}
+	&:hover{
+		transform:scale(1.5);
+	}
+	a{
+		color:white;
+	}
+}

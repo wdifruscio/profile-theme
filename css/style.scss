@@ -1,0 +1,266 @@
+@import "partials/variables";
+@import "partials/base";
+@import "partials/nav";
+@import "partials/bubble";
+@import "partials/buttons";
+
+
+//about section
+.about{
+	padding-top:2%;
+	background: linear-gradient(to bottom, rgba(234, 69, 67, 0.75), rgba(234, 69, 67,0.75)) ,url('../patterns/2.png');
+	background-attachment:fixed;
+	background-size:10%;
+	text-align:center;
+	font-family:$bodyfont;
+	height:100vh;
+	position: relative;
+	.wrapper{
+			margin-top:1%;
+	}
+}
+.profile-image{
+	flex:1 1 35%;
+	margin-right:5%;
+	img{
+		max-width:100%;
+	}
+}
+.header-text-2{
+	text-align:left;
+}
+.header-text{
+	color:white;
+	flex:1 1 60%;
+	h1,h2{
+		font-family: $titlefont;
+		margin-bottom:0;
+	}
+	h1{
+		font-size:4.5rem;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		text-shadow: 5px 5px 0 black;
+		margin-top:0;
+		margin:0;
+		padding:1% 0;
+	}
+	h2{
+		font-family: $bodyfont;
+		font-size:2rem;
+		text-transform:uppercase;
+		margin-bottom:-2%;
+		
+	}
+	p{
+		line-height:2.5rem;
+	}
+}
+
+//work section
+.work{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.90), rgba(0, 0, 0,0.90)) ,url('../patterns/subtle_dots.png');
+	background-attachment:fixed;
+	.section-header{
+		h1{
+			color:white;
+		}
+	}
+}
+.half-container{
+	color:white;
+	flex:1 1 50%;
+	height:400px;
+	h3{
+		font-size:2.4rem;
+		font-family: $titlefont;
+	}
+	img{
+		max-width:100%;
+	}
+	
+}
+.project-1{
+	background: url(../assets/project-1.jpeg) no-repeat center;
+	background-size:cover;
+}
+.project-2{
+	background: url(../assets/project-2.jpg) no-repeat center;
+	background-size:cover;
+}
+.project-info{
+	padding:50px;
+	padding-top:20px;
+	padding-bottom:70px;
+	transition:0.2s ease all;
+}
+//skills section
+.skills{
+	background: url('../patterns/9.png');
+	background-attachment:fixed;
+	justify-content:space-between;
+	align-items:center;
+	padding:1px;
+	h1{
+		margin:0;
+	}
+}
+.skill-container{
+	display:flex;
+	align-items:center;
+	flex:1 1 20%;
+	margin-bottom:5%;
+	text-align:center;
+	color:black;
+	font-size:1.6rem;
+	position:relative;
+	perspective:200px;
+	width:96px;
+	height:96px;
+	img{
+		width:96px;
+		height:96px;
+	}
+}
+
+//cards
+
+    .front, .back {
+      position: absolute;
+      height:100%;
+      width:100%;
+      transition:all 0.5s;
+      backface-visibility:hidden;
+    }
+    .front {
+    }
+    .back {
+    	display:flex;
+    	p{
+    		margin:auto;
+    		font-size:2rem;
+    		font-weight: bold;
+    	}
+      -webkit-transform:rotateY(180deg);
+    }
+
+    .skill-container:hover .back {
+      -webkit-transform:rotateY(0);
+    }
+
+    .skill-container:hover .front {
+      -webkit-transform:rotateY(-180deg);
+    }
+//contact
+.contact{
+	background: linear-gradient(to bottom, rgba(67, 203, 131, 0.50), rgba(67, 203, 131,0.50)) ,url('../patterns/10.png');
+	padding:25px 15px;
+	color:#3A3A3A;
+	h1{
+		color:black;
+	}
+}
+.form-wrapper{
+	width:70%;
+	margin:0 auto;
+	// background:rgba(81, 152, 114, 1);
+	.section-header{
+		padding:1.5%;
+		margin:0;
+	}
+}
+//social btns
+.social{
+	display:flex;
+	justify-content:center;
+	margin:5% auto;
+	li{
+		display:flex;
+		align-items: center;
+	}
+	a{
+		display:block;
+		margin:0 25px;
+		width:100%;
+		transition:0.3s all ease;
+		&:hover .fa{
+			color:white;
+		}
+	}
+	i{
+		width:4rem;
+	}
+	.fa{
+		font-size:4rem;
+		color:#3A3A3A;
+		transition:0.3s all ease;
+	}
+}
+form{
+	font-size:1.6rem;
+	text-align:left;
+	padding:20px;
+	width:60%;
+	margin:0 auto;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	input,textarea{
+		margin:0 auto;	
+		margin-top:3%;
+		width:100%;
+		font-size:1.6rem;
+		padding:5px 10px;
+		background: transparent;
+		border:transparent;
+		border-bottom:1px solid #3A3A3A;
+		transition: 0.3s ease all;
+		&:hover{
+			border-bottom:1px solid white;
+		}
+	}
+	input:focus,
+	textarea:focus{
+		outline:1px solid white;
+		border-bottom: 1px solid transparent;
+	}
+	.submit-btn{
+		margin:0 auto;
+		margin-top:5%;
+		width:200px;
+		border:3px outset #3A3A3A;
+		padding:1%;
+		font-family:$titlefont;
+		&:hover{
+			border:3px solid white;
+			color:white;
+		}
+		&:active{
+			border:3px inset white;
+		}
+}
+}
+footer{
+	background: darken(rgba(81, 152, 114, 1), 25%);
+	padding:1px;
+	text-align:center;
+}
+
+//placeholder
+::-webkit-input-placeholder {
+   color: #3A3A3A;
+   font-family:$titlefont;
+   font-variant: small-caps;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
