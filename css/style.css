@@ -276,7 +276,7 @@ p {
 
 .chevron-down {
   position: relative;
-  margin: -1% auto;
+  margin: 3% auto;
   width: 50px;
   transition: 0.3s all ease;
   cursor: pointer;
@@ -385,7 +385,7 @@ nav .icon {
   background-size: 10%;
   text-align: center;
   font-family: "Fira Mono", monospace;
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
