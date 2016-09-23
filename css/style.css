@@ -397,7 +397,7 @@ nav .icon {
   font-family: "Fira Mono", monospace;
   font-size: 3rem;
   font-weight: 800;
-  margin: -2.5% auto;
+  margin-top: -1%;
 }
 
 .header-text {
@@ -407,10 +407,6 @@ nav .icon {
       -ms-flex: 1 1 80%;
           flex: 1 1 80%;
   text-align: center;
-}
-
-.header-text h1, .header-text h2 {
-  margin-bottom: 0;
 }
 
 .header-text h1 {
@@ -424,7 +420,12 @@ nav .icon {
   font-family: "Bungee", sans-serif;
 }
 
+.header-text h2 {
+  margin-bottom: 5%;
+}
+
 .header-text p {
+  margin-top: 5%;
   line-height: 2.5rem;
 }
 

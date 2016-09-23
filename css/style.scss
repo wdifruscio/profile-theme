@@ -30,16 +30,13 @@
 	font-family:$bodyfont;
 	font-size:3rem;
 	font-weight:800;
-	margin: -2.5% auto;
+	margin-top:-1%;
 }
 .header-text{
 	margin:auto;
 	color:white;
 	flex:1 1 80%;
 	text-align:center;
-	h1,h2{
-		margin-bottom:0;
-	}
 	h1{
 		font-size:4.5rem;
 		text-transform: uppercase;
@@ -50,7 +47,11 @@
 		padding:1% 0;
 		font-family: $titlefont;
 	}
+	h2{
+		margin-bottom:5%;
+	}
 	p{
+		margin-top:5%;
 		line-height:2.5rem;
 	}
 }
