@@ -7,7 +7,7 @@ $(document).ready(function(){
 	$(".project-info").css("transform", "scale(0.75)");
 	//fade in image and nav
 	$("#profile").fadeIn("slow");
-	$("#nav").slideDown("slow");
+	$("#nav").slideDown(1000);
 	//type thing
     $(function(){
     $('#header-2').typewrite({
