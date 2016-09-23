@@ -1,9 +1,6 @@
 $(document).ready(function(){
 	//set variables
 	//hide stuff 
-	$("#header-1").css("display","none");
-	$("#header-2").css("display","none");
-	$("#header-3").css("display","none");
 	$("#profile").css("display","none");
 	$("#nav").css("display","none");
 	$(".project-info").css("opacity", 0.25);
@@ -13,16 +10,10 @@ $(document).ready(function(){
 	$("#nav").slideDown("slow");
 	//type thing
     $(function(){
-    $('#header-1').typewrite({
-    'callback': function(){
-		$("#header-3").fadeIn(750);
-	    },
-	    'delay': 150
-	});
-	$("#header-2").typewrite({
+    $('#header-2').typewrite({
     'callback': function(){
 	    },
-	    'delay': 250
+	    'delay': 300
 	});
 });
 	//scroll stuff

@@ -1,10 +1,13 @@
 nav{
 	background: white;
-	// position:fixed;
-	// z-index:100;
+	position:fixed;
+	z-index:100;
+	right:0;
+	top:0;
 	ul{
 		display:flex;
-		margin:auto;
+		margin-right:auto;
+		align-items:center;
 	}
 	li{
 		list-style:none;
@@ -21,6 +24,9 @@ nav{
 			color:white;
 			background:black;
 		}
+	}
+	.icon{
+		width:38px;
 	}
 }
 
