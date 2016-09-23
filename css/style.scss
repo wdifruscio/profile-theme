@@ -19,13 +19,13 @@
 			margin-top:1%;
 	}
 }
-.profile-image{
-	flex:1 1 35%;
-	margin-right:5%;
-	img{
-		max-width:100%;
-	}
-}
+// .profile-image{
+// 	flex:1 1 35%;
+// 	margin-right:5%;
+// 	img{
+// 		max-width:100%;
+// 	}
+// }
 .header-special{
 	font-family:$bodyfont;
 	font-size:2rem;
@@ -33,9 +33,10 @@
 	font-weight:600;
 }
 .header-text{
+	margin:auto;
 	color:white;
-	flex:1 1 60%;
-	text-align:left;
+	flex:1 1 80%;
+	text-align:center;
 	h1,h2{
 		margin-bottom:0;
 	}

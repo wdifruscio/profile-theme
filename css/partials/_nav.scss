@@ -1,12 +1,12 @@
 nav{
 	background: white;
-	position:fixed;
 	z-index:100;
 	right:0;
 	top:0;
+
 	ul{
+			margin:auto;
 		display:flex;
-		margin-right:auto;
 		align-items:center;
 	}
 	li{

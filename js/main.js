@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('#header-2').typewrite({
     'callback': function(){
 	    },
-	    'delay': 300
+	    'delay': 180
 	});
 });
 	//scroll stuff

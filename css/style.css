@@ -324,17 +324,16 @@ p {
 
 nav {
   background: white;
-  position: fixed;
   z-index: 100;
   right: 0;
   top: 0;
 }
 
 nav ul {
+  margin: auto;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: auto;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -394,17 +393,6 @@ nav .icon {
   margin-top: 1%;
 }
 
-.profile-image {
-  -webkit-flex: 1 1 35%;
-      -ms-flex: 1 1 35%;
-          flex: 1 1 35%;
-  margin-right: 5%;
-}
-
-.profile-image img {
-  max-width: 100%;
-}
-
 .header-special {
   font-family: "Fira Mono", monospace;
   font-size: 2rem;
@@ -413,11 +401,12 @@ nav .icon {
 }
 
 .header-text {
+  margin: auto;
   color: white;
-  -webkit-flex: 1 1 60%;
-      -ms-flex: 1 1 60%;
-          flex: 1 1 60%;
-  text-align: left;
+  -webkit-flex: 1 1 80%;
+      -ms-flex: 1 1 80%;
+          flex: 1 1 80%;
+  text-align: center;
 }
 
 .header-text h1, .header-text h2 {
