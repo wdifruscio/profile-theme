@@ -31,3 +31,15 @@
 		color:white;
 	}
 }
+
+.gif{
+	display:none;
+	position:fixed;
+	z-index:200;
+	bottom:10px;
+	left:10px;
+	img{
+		width:50px;
+	}
+}
+

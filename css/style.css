@@ -302,6 +302,18 @@ p {
   color: white;
 }
 
+.gif {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  bottom: 10px;
+  left: 10px;
+}
+
+.gif img {
+  width: 50px;
+}
+
 nav.flex-wrapper {
   background: white;
   z-index: 100;

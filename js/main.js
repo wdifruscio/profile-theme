@@ -5,7 +5,7 @@ $(document).ready(function(){
 	//check if window is smart phone to display hamburger. 
 		var width = $(window).width();
 		if (width < 480){
-			$("#gif").fadeIn(1000);
+			$(".gif").fadeIn(1000);
 			console.log("big");
 		}
 		if	(width > 480){
