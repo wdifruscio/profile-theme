@@ -774,4 +774,10 @@ footer {
   .contact form {
     padding: 0;
   }
+  .social .fa {
+    font-size: 2rem;
+  }
+  .social i {
+    width: 2.5rem;
+  }
 }
