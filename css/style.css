@@ -752,6 +752,7 @@ footer {
 
 @media all and (max-width: 492px) {
   .about {
+    padding-top: 15px;
     height: 100vh;
   }
   .wrapper {
