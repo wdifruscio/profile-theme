@@ -1,13 +1,23 @@
+
+
 $(document).ready(function(){
-	//set variables
-	//hide stuff 
+	// $("#nav").hide();
+	//check if window is smart phone to display hamburger. 
+		var width = $(window).width();
+		if (width < 480){
+			$("#gif").fadeIn(1000);
+			console.log("big");
+		}
+		if	(width > 480){
+			$("nav").slideDown();
+			console.log("sm");
+		}
+ 
 	$("#profile").css("display","none");
-	$("#nav").css("display","none");
 	$(".project-info").css("opacity", 0.25);
 	$(".project-info").css("transform", "scale(0.75)");
 	//fade in image and nav
 	$("#profile").fadeIn("slow");
-	$("#nav").slideDown(1000);
 	//type thing
     $(function(){
     $('#header-2').typewrite({
@@ -42,7 +52,7 @@ $(function() {
     }
   });
 });
-});
+}); //doc end
 
 	
 

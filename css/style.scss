@@ -81,15 +81,6 @@
 	img{
 		width:100%;
 	}
-	
-}
-.project-1{
-	/* background: url(../assets/project-1.jpeg) no-repeat center; */
-	background-size:cover;
-}
-.project-2{
-/* 	background: url(../assets/project-2.jpg) no-repeat center; */
-	background-size:cover;
 }
 .project-info{
 	padding:50px;
@@ -123,6 +114,7 @@
 	img{
 		width:96px;
 		height:96px;
+
 	}
 }
 
@@ -257,15 +249,21 @@ footer{
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: white;  
+   color: #3A3A3A;
+   font-family:$titlefont;
+   font-variant: small-caps;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: white;  
+   color: #3A3A3A;
+   font-family:$titlefont;
+   font-variant: small-caps; 
 }
 
 :-ms-input-placeholder {  
-   color: white;  
+   color: #3A3A3A;
+   font-family:$titlefont;
+   font-variant: small-caps;
 }
 
 @import 'partials/queries';
