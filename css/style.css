@@ -766,4 +766,13 @@ footer {
     font-size: 1.5rem;
     padding: 2% 5%;
   }
+  .contact {
+    padding: 1px;
+  }
+  .contact .section-header {
+    padding: 0;
+  }
+  .contact form {
+    padding: 0;
+  }
 }

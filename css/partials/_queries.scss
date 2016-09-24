@@ -76,5 +76,14 @@ $largeScreen: 1400px;
       padding::2% 5%;
     }
   }
+  .contact{
+    padding:1px;
+    .section-header{
+      padding:0;
+    }
+    form{
+      padding:0;
+    }
+  }
 
   }
