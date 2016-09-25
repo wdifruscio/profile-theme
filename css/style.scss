@@ -256,17 +256,13 @@ footer{
 	.flex-wrapper{
 		justify-content: space-between;
 	}
-	.left{
-		flex:1 1 50%;
-	}
-	.right{
+	.footer-box{
 		.fa{
 			margin-right:10px;
 		}
 		display:flex;
-		justify-content: center;
+		justify-content:center;
 		align-items:center;
-		flex:1 1 50%;
 	}
 }
 
