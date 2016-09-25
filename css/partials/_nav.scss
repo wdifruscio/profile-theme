@@ -1,8 +1,8 @@
-nav.nav-menu, .nav-menu-2{
-	background: linear-gradient(to bottom, rgba(234, 69, 67, 0.75), rgba(234, 69, 67,0.75)) ,url('../assets/pattern-1.png');
+nav.nav-menu{
+	background: white;
 	z-index:100;
 	width:100%;
-	transition:0.3s all ease;
+	// transition:0.3s all ease;
 	ul{	
 		margin:auto;
 		display:flex;
@@ -108,3 +108,21 @@ a.close {
     right: 0;
 }
 
+.side-nav{
+	position:fixed;
+	right:5%;
+	top:50%;
+	transform:translateY(-50%);
+	z-index:100;
+}
+.side-nav > div{
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	border:2px solid white;
+	margin-top:5px;
+	transition:0.3s all ease;
+	a{
+		color:transparent;
+	}
+}

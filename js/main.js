@@ -1,12 +1,9 @@
 $(document).ready(function(){
-	$(".project-info").css("opacity", 0.25);
-	$(".project-info").css("transform", "scale(0.75)");
-	$("form").animate({'opacity': '0.25'});
-	$("form").css('transform', 'scale(0.75)');
+$(".active-1").css("background", "white");
 
 	//type thing
 	$("#header-2").typed({
-	    strings: ["Front End Developer.", "Fitness Guru.", "Lifelong Learner."],
+	    strings: ["Front End Developer.", "Fitness Guru.", "JavaScript Wizard^20000", "if((this).is('cool')^1000{hire me}^1000 else{console.log('sadface :(')}^1000" ],
 	    typeSpeed: 90,
 	    backSpeed: 10,
 	    loop:true,
@@ -14,32 +11,41 @@ $(document).ready(function(){
 	});
 // });
 	//scroll stuff
+	window.sr = ScrollReveal();
 	$(window).scroll(function(){
-
-		$('.project-info').each( function(i){		    
-		    var bottom_of_object = $(this).offset().top + $(this).outerHeight(); 
-		    var bottom_of_window = $(window).scrollTop() + $(window).height();
-			    if( bottom_of_window > bottom_of_object ){			    	
-			        $(this).animate({'opacity':'1'});
-			        $(this).css("transform", "scale(1)");
-                }
-            });
-		$('form').each( function(i){		    
-		    var bottom_of_object = $(this).offset().top + $(this).outerHeight(); 
-		    var bottom_of_window = $(window).scrollTop() + $(window).height();
-			    if( bottom_of_window > bottom_of_object ){			    	
-			        $(this).animate({'opacity':'1'});
-			        $(this).css("transform", "scale(1)");
-			    }
-			});
+		sr.reveal('.half-container');
 		//nav fade{
 			var scroll = $(window).scrollTop();
+			var workHeight = $("#work").offset().top - 20;
+			var skillsHeight = $('#skills').offset().top -20;
 	    	var headerHeight = $("#about").offset().top;
+	    	var contactHeight = $("#contact").offset().top -20;
+
 	    	if(scroll > headerHeight){
-	    		$("nav.nav-menu").css("background", "white");
-	    		$("nav.nav-menu a").addClass('anchor');
-	    		$("nav.nav-menu").addClass("fixed animated slideInDown");
+	    		$(".active-1").css("background", "white");
+	    		$(".active-2").css("background", "transparent");
+	    		$(".active-3").css("background", "transparent");
+	    		$(".active-4").css("background", "transparent");
 			}
+	    	if(scroll > workHeight){
+	    		$(".active-2").css("background", "white");
+	    		$(".active-1").css("background", "transparent");
+	    		$(".active-3").css("background", "transparent");
+	    		$(".active-4").css("background", "transparent");
+			}
+	    	if(scroll > skillsHeight){
+	    		$(".active-3").css("background", "white");
+	    		$(".active-2").css("background", "transparent");
+	    		$(".active-1").css("background", "transparent");
+	    		$(".active-4").css("background", "transparent");
+			}
+	    	if(scroll > contactHeight){
+	    		$(".active-4").css("background", "white");
+	    		$(".active-2").css("background", "transparent");
+	    		$(".active-3").css("background", "transparent");
+	    		$(".active-1").css("background", "transparent");
+			}
+
 	});
 	//smoothscroll
 $(function() {
