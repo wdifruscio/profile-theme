@@ -59,6 +59,9 @@ $largeScreen: 1400px;
 
   }
 @media all and (max-width:$smartphone){
+  img.icon{
+    display:none;
+  }
   .hamburger-menu{
     display:block;
   }
@@ -80,7 +83,7 @@ $largeScreen: 1400px;
   }	
   .header-text{
     h1{
-      font-size:3rem;
+      font-size:3.3rem;
       padding:1%;
       margin:auto;
     }

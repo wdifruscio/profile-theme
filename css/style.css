@@ -713,10 +713,20 @@ span.typed-cursor {
   background-attachment: fixed;
   padding: 25px 15px;
   color: #3A3A3A;
+  position: relative;
 }
 
 .contact h1 {
   color: black;
+}
+
+.contact p {
+  margin-top: -5%;
+}
+
+.contact img {
+  width: 70px;
+  margin-bottom: -2.5%;
 }
 
 .form-wrapper {
@@ -773,7 +783,7 @@ form {
   font-size: 1.6rem;
   text-align: left;
   padding: 20px;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -826,9 +836,41 @@ form .submit-btn:active {
 }
 
 footer {
+  position: relative;
   background: #254534;
   padding: 1px;
   text-align: center;
+}
+
+footer .flex-wrapper {
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .left {
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+footer .right {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+footer .right .fa {
+  margin-right: 10px;
 }
 
 ::-webkit-input-placeholder {
@@ -923,6 +965,9 @@ footer {
 }
 
 @media all and (max-width: 492px) {
+  img.icon {
+    display: none;
+  }
   .hamburger-menu {
     display: block;
   }
@@ -943,7 +988,7 @@ footer {
     width: 100%;
   }
   .header-text h1 {
-    font-size: 3rem;
+    font-size: 3.3rem;
     padding: 1%;
     margin: auto;
   }
