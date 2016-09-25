@@ -5,15 +5,17 @@ $(document).ready(function(){
 	$("form").css('transform', 'scale(0.75)');
 
 	//type thing
-    $(function(){
-    $('#header-2').typewrite({
-    'callback': function(){
-	    },
-	    'delay': 180
+	$("#header-2").typed({
+	    strings: ["Front End Developer.", "Fitness Guru.", "Lifelong Learner."],
+	    typeSpeed: 90,
+	    backSpeed: 10,
+	    loop:true,
+	    contentType: 'html' // or 'text'
 	});
-});
+// });
 	//scroll stuff
 	$(window).scroll(function(){
+
 		$('.project-info').each( function(i){		    
 		    var bottom_of_object = $(this).offset().top + $(this).outerHeight(); 
 		    var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -30,6 +32,14 @@ $(document).ready(function(){
 			        $(this).css("transform", "scale(1)");
 			    }
 			});
+		//nav fade{
+			var scroll = $(window).scrollTop();
+	    	var headerHeight = $("#about").offset().top;
+	    	if(scroll > headerHeight){
+	    		$("nav.nav-menu").css("background", "white");
+	    		$("nav.nav-menu a").addClass('anchor');
+	    		$("nav.nav-menu").addClass("fixed animated slideInDown");
+			}
 	});
 	//smoothscroll
 $(function() {
@@ -55,6 +65,8 @@ $(function() {
 		$(".hamburger-nav").slideUp();
 		$(".hamburger-menu").show();
 	}); 
+
+
 }); //doc end
 
 	
