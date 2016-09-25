@@ -1,51 +1,49 @@
 $(document).ready(function(){
-$(".active-1").css("background", "white");
-
+	window.sr = ScrollReveal();
+// $(".active-1").css("background", "white");
 	//type thing
 	$("#header-2").typed({
-	    strings: ["Front End Developer.", "Fitness Guru.", "JavaScript Wizard^20000", "if((this).is('cool')^1000{hire me}^1000 else{console.log('sadface :(')}^1000" ],
+	    strings: ["Front End Developer.^2000", "Fitness Guru.^2000", "Tecnhology Wizard^20000", "if((this).is('cool')^1000{hire me}^1000 else{console.log('sadface :(')}^1000" ],
 	    typeSpeed: 90,
 	    backSpeed: 10,
 	    loop:true,
 	    contentType: 'html' // or 'text'
 	});
-// });
 	//scroll stuff
-	window.sr = ScrollReveal();
 	$(window).scroll(function(){
 		sr.reveal('.half-container');
-		//nav fade{
-			var scroll = $(window).scrollTop();
-			var workHeight = $("#work").offset().top - 20;
-			var skillsHeight = $('#skills').offset().top -20;
-	    	var headerHeight = $("#about").offset().top;
-	    	var contactHeight = $("#contact").offset().top -20;
+		sr.reveal('#skills');
+		sr.reveal('#contact');
+			// var scroll = $(window).scrollTop();
+			// var workHeight = $("#work").offset().top - 20;
+			// var skillsHeight = $('#skills').offset().top + $(this).outerHeight();
+	  //   	var headerHeight = $("#about").offset().top;
+	  //   	var contactHeight = $("#contact").offset().top;
 
-	    	if(scroll > headerHeight){
-	    		$(".active-1").css("background", "white");
-	    		$(".active-2").css("background", "transparent");
-	    		$(".active-3").css("background", "transparent");
-	    		$(".active-4").css("background", "transparent");
-			}
-	    	if(scroll > workHeight){
-	    		$(".active-2").css("background", "white");
-	    		$(".active-1").css("background", "transparent");
-	    		$(".active-3").css("background", "transparent");
-	    		$(".active-4").css("background", "transparent");
-			}
-	    	if(scroll > skillsHeight){
-	    		$(".active-3").css("background", "white");
-	    		$(".active-2").css("background", "transparent");
-	    		$(".active-1").css("background", "transparent");
-	    		$(".active-4").css("background", "transparent");
-			}
-	    	if(scroll > contactHeight){
-	    		$(".active-4").css("background", "white");
-	    		$(".active-2").css("background", "transparent");
-	    		$(".active-3").css("background", "transparent");
-	    		$(".active-1").css("background", "transparent");
-			}
-
+	  //   	if(scroll > headerHeight){
+	  //   		$(".active-1").css("background", "white");
+	  //   		$(".active-2").css("background", "transparent");
+	  //   		$(".active-3").css("background", "transparent");
+	  //   		$(".active-4").css("background", "transparent");
+			// }
+	  //   	if(scroll > workHeight){
+	  //   		$(".active-2").css("background", "white");
+	  //   		$(".active-1").css("background", "transparent");
+	  //   		$(".active-3").css("background", "transparent");
+	  //   		$(".active-4").css("background", "transparent");
+			// }
+	  //   	if(scroll > skillsHeight){
+	  //   		$(".active-3").css("background", "white");
+	  //   		$(".active-2").css("background", "transparent");
+	  //   		$(".active-1").css("background", "transparent");
+	  //   		$(".active-4").css("background", "transparent");
+			// }
+	  //   	if(scroll > contactHeight){
+	  //   		$(".active-4").css("background", "white");
+	  //   		$(".active-2").css("background", "transparent");
+	  //   		$(".active-3").css("background", "transparent");
+	  //   		$(".active-1").css("background", "transparent");
+			// }
 	});
 	//smoothscroll
 $(function() {
@@ -71,8 +69,6 @@ $(function() {
 		$(".hamburger-nav").slideUp();
 		$(".hamburger-menu").show();
 	}); 
-
-
 }); //doc end
 
 	
