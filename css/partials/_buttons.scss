@@ -7,13 +7,20 @@
 	color:white;
 	font-family:$bodyfont;
 	transition:0.3s;
+	a{
+		color: white;
+		&:hover{
+			
+		}
+	}
 }
 
 .project-info{
 	.btn-1{
 		&:hover{
-			color:rgb(67, 203, 131);
+			color: white;
 			border:2px solid rgb(67, 203, 131);
+			background: rgb(67, 203, 131);
 		}
 	}
 }

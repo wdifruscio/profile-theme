@@ -1,9 +1,8 @@
-nav.flex-wrapper{
+nav.nav-menu{
 	background: white;
 	z-index:100;
 	width:100%;
 	margin:auto;
-	display:none;
 	ul{	
 		margin:auto;
 		display:flex;
@@ -26,8 +25,73 @@ nav.flex-wrapper{
 			background:black;
 		}
 	}
+	a.anchor-1{
+		&:hover{
+		}
+	}
+	a.anchor-2{
+		&:hover{
+			color:black;
+			background: #0085FF;
+		}
+	}
+	a.anchor-3{
+		&:hover{
+			color:black;
+			background:rgb(67, 203, 131)
+		}
+	}
 	.icon{
 		width:38px;
 	}
+}
+.hamburger-menu{
+	position:fixed;
+	top:1%;
+	right:1%;
+	z-index:10;
+	display:none;
+	
+	.fa-bars{
+		font-size:3rem;
+		padding:10px;
+		color: white;
+		cursor:pointer;
+
+	}
+}
+.hamburger-nav{
+	width:100%;
+	display:none;
+	z-index:10;
+	position:fixed;
+	background: rgba(0,0,0,0.9);
+	top:0;
+	left:0;
+	padding-top:20px;
+	padding-bottom:20px;
+	ul li{
+		list-style:none;
+	}
+	a{
+		text-decoration: none;
+	    font-size: 25px;
+	    color: #818181;
+	    display: block;
+	    transition: 0.3s;
+	    color:white;
+	    padding:5px 10px;
+	    display:block;
+	    text-align:center;
+	    &:hover{
+	    	color:silver;
+	    	transform:rotate(5deg);
+	    }
+	}
+}
+a.close {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 

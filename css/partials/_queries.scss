@@ -20,7 +20,6 @@ $largeScreen: 1400px;
     text-align:center;
   }
 }
-
 @media all and (max-width:$tabletPortrait){
   .header-text{
     h1{
@@ -28,7 +27,7 @@ $largeScreen: 1400px;
     }
   }
   .flex-wrapper{
-        .box-1{
+    .box-1{
       order:2;
     }
     .box-2{
@@ -45,9 +44,6 @@ $largeScreen: 1400px;
     flex:1 1 100%;
     text-align:center;
   }
-  .project-info{
-    padding:5px;;
-  }
   .skill-container{
     flex:1 1 32%;
   }
@@ -57,9 +53,21 @@ $largeScreen: 1400px;
   form{
         width:100%;
   }
+  .project-info{
+    padding:5px;;
+  }
 
   }
 @media all and (max-width:$smartphone){
+  .hamburger-menu{
+    display:block;
+  }
+  .gif{
+    display:block;
+  }
+  nav.nav-menu{
+    display:none;
+  } 
   .about{
     padding-top:15px;
     height:100vh;
@@ -69,16 +77,17 @@ $largeScreen: 1400px;
   }	
   .header-text{
     h1{
-      font-size:2.8rem;
-      padding-bottom:2%;
+      font-size:3rem;
+      padding:1%;
       margin:auto;
     }
     h2{
+      font-size:2rem;
       margin:3% auto;
     }
     p{
-      font-size:1.5rem;
-      padding::2% 5%;
+      font-size:1.2rem;
+      padding::2%;
     }
   }
   .skill-container{
@@ -107,5 +116,4 @@ $largeScreen: 1400px;
       width:2.5rem;
     }
   }
-
   }

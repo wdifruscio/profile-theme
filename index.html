@@ -4,22 +4,35 @@
         <meta charset="utf-8">
         <meta name="description" content="William DiFruscio - Front End Developer/Programmer">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>willcodes.</title>
+        <title>willcodes. | Front End Developer</title>
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Fira+Mono|Inconsolata|Source+Code+Pro" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bungee|Fjalla+One" rel="stylesheet">
     <body>
-    <div class="gif">
-        <img src="assets/nav.gif" alt="">
-    </div>
-    <nav class="flex-wrapper" id="nav">
-        <ul>
-            <li><a href="#work">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><img class="icon" src="assets/nav.gif" alt=""></li>
-        </ul>
-    </nav>
+        <div class="gif">
+            <a href="#about" title="Scroll to top"><img src="assets/nav.gif" alt="icon of cartoon waving"></a>
+        </div>
+        <div class="hamburger-menu">
+            <i class="fa fa-bars"></i>
+        </div>
+        <nav class="hamburger-nav">
+        <a href="javascript:void(0)" class="close">&times;</a>
+            <ul>
+                <li><a href="#work" >Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-menu">
+            <div class="flex-wrapper">
+                <ul>
+                    <li><a href="#work" class="anchor-1">Projects</a></li>
+                    <li><a href="#skills" class="anchor-2">Skills</a></li>
+                    <li><a href="#contact" class="anchor-3">Contact</a></li>
+                    <li><img class="icon" src="assets/nav.gif" alt="icon of cartoon waving"></li>
+                </ul>
+            </div>
+        </nav>
     <section class="about" id="about">
     	<div class="wrapper flex-wrapper">
 <!--                 <div class="profile-image">
@@ -28,7 +41,7 @@
                 <div class="header-text">
                     <h1 id="header-1">Will DiFruscio</h1>
                     <h2 id="header-2" class="header-special">Developer<span class="blinking">.</span></h2>
-        			<p id="header-3">Hi, my name is Will and I am a Toronto based developer. I love working with JavaScript and hate waiting for websites to load. I aspire to write clean concise code. Check out my work and don't hesitate to <strong>get it touch!
+        			<p id="header-3">Hi, my name is Will and I am a Toronto based developer. I love working with JavaScript and hate waiting for websites to load. I aspire to write clean concise code. Check out my work and don't hesitate to <strong><a href="#contact">get in touch!</a></strong>
         			</p>
         		</div>
             </div>
@@ -39,13 +52,13 @@
     <section class="work" id="work">
         <div class="flex-wrapper">
             <div class="half-container box-1">
-            <img src="assets/project-2.png" alt="">
+            <img src="assets/project-2.png" alt="Priority Brokerage Image">
             </div>
             <div class="half-container project-info box-2">
                 <h3>Priority Brokerage</h3>
                 <p>Website made for Priority Brokerage logisitcs firm.</p>
                 <p>HTML, SASS, jQuery, JavaScript</p>
-                <button class="btn-1">View</button>
+                <button class="btn-1"><a href="https://willcodes.github.io/Priority-Brokerage/" target="_blank">View</a></button>
             </div>
             <div class="half-container project-info box-3">
                 <h3>Whitespace</h3>
@@ -54,7 +67,7 @@
                 <button class="btn-1">View</button>
             </div>
             <div class="half-container box-4">
-            <img src="assets/project-1.png" alt="">
+            <img src="assets/project-1.png" alt="Project 2 website picture">
             </div>
         </div>    	
     </section>

@@ -4,7 +4,6 @@
 @import "partials/nav";
 @import "partials/buttons";
 
-
 //about section
 .about{
 	padding-top:2%;
@@ -69,6 +68,8 @@
 	}
 	.flex-wrapper{
 		align-items: center;
+		max-width:1377px;
+		margin:0 auto;
 	}
 }
 .half-container{
@@ -109,6 +110,8 @@
 	font-size:1.6rem;
 	position:relative;
 	perspective:200px;
+	-moz-transform: perspective(200px);
+	-moz-transform-style: preserve-3d; 
 	width:96px;
 	height:96px;
 	img{
@@ -125,6 +128,8 @@
       width:100%;
       transition:all 0.5s;
       backface-visibility:hidden;
+      -moz-backface-visibility:hidden;
+      -webkit-transform: rotateY(0deg);
     }
     .front {
     }
@@ -148,6 +153,7 @@
 //contact
 .contact{
 	background: linear-gradient(to bottom, rgba(67, 203, 131, 0.50), rgba(67, 203, 131,0.50)) ,url('../patterns/10.png');
+	background-attachment:fixed;
 	padding:25px 15px;
 	color:#3A3A3A;
 	h1{
@@ -207,10 +213,10 @@ form{
 		padding:5px 10px;
 		background: transparent;
 		border:transparent;
-		border-bottom:1px solid #3A3A3A;
+		border-bottom:2px solid #3A3A3A;
 		transition: 0.3s ease all;
 		&:hover{
-			border-bottom:1px solid white;
+			border-bottom:2px solid white;
 		}
 	}
 	input:focus,

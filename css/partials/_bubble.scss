@@ -22,22 +22,19 @@
 	&:hover{
 		transform:scale(1.5);
 	}
-
 	.fa{
 		font-size:4rem;
-
 	}
 	a{
 		color:white;
 	}
 }
-
 .gif{
 	display:none;
 	position:fixed;
 	z-index:200;
-	bottom:10px;
-	left:10px;
+	bottom:0;
+	left:0;
 	img{
 		width:50px;
 	}
