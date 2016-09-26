@@ -404,7 +404,7 @@ nav.nav-menu a.anchor-1:hover {
 
 nav.nav-menu a.anchor-2:hover {
   color: black;
-  background: #0085FF;
+  background: cornflowerblue;
 }
 
 nav.nav-menu a.anchor-3:hover {
@@ -591,7 +591,7 @@ span.typed-cursor {
 }
 
 .work {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../assets/pattern-2.png");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86)), url("../assets/pattern-2.png");
   background-size: 10%;
   background-attachment: fixed;
 }
@@ -709,7 +709,7 @@ span.typed-cursor {
 }
 
 .contact {
-  background: linear-gradient(to bottom, rgba(67, 203, 131, 0.5), rgba(67, 203, 131, 0.5)), url("../assets/pattern-4.png");
+  background: linear-gradient(to bottom, rgba(67, 203, 131, 0.4), rgba(67, 203, 131, 0.4)), url("../assets/pattern-4.png");
   background-attachment: fixed;
   padding: 25px 15px;
   color: #3A3A3A;
